@@ -21,5 +21,22 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    'max-len': ['warn', {
+        code: 180,
+        ignoreTemplateLiterals: true,
+        ignoreComments: true,
+        ignoreUrls: true,
+        ignoreStrings: true,
+    }],
+    "prettier/prettier": ["error", {
+        "tabWidth": 4,
+        "useTabs": false,
+        "printWidth": 250,
+        "semi": true,
+        "singleQuote": true,
+        "bracketSpacing": true,
+        "arrowParens": "avoid",
+        "trailingComma": "none"
+    }]
   },
 };
